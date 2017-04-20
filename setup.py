@@ -1,10 +1,12 @@
 from setuptools import setup
 
-setup(name='YourAppName',
+with open('requirements.txt','rb') as f:
+      requirements = f.read()
+setup(name='Dashboard',
       version='1.0',
-      description='OpenShift App',
-      author='Your Name',
-      author_email='example@example.com',
-      url='http://www.python.org/sigs/distutils-sig/',
-#      install_requires=['Django>=1.3'],
+      description='Dashbord App',
+      author='Cesar Herdenez',
+      author_email='Caherdenez@gmail.com',
+      url='http://cesarh.co',
+      install_requires= requirements,
      )
